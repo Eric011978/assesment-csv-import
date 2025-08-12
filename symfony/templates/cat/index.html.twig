@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cat List{% endblock %}
+
+{% block body %}
+<h1>Cat List</h1>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for cat in cats %}
+        <tr>
+            <td>{{ cat.name }}</td>
+            <td>{{ cat.description }}</td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="2">No cats found.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

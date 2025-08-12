@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+}
+
+/* Basic table styling for a cleaner layout */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+.styled-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.styled-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
