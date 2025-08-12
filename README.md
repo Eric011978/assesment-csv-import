@@ -6,6 +6,8 @@ Installeren composer packages
 composer install
 ```
 
+Maak een nieuwe .env file aan in de root op basis van .env.example
+
 Database instellingen goed zetten in de .env
 
 ```bash
@@ -30,10 +32,11 @@ Nieuwe import draaien na aanmaken db / tabellen
 php bin/console app:import-cats 
 ```
 
-Starten php webserver vanuit public folder
+Starten php webserver vanuit public folder. 
+(Dit kan ook een eigen local webserver zijn uiteraard)
 
 ```bash
 php -S localhost:8000 
 ```
 
-Ga tenslotte naar de url http://localhost:8000/cats
+Ga tenslotte naar de url http://localhost:8000/cats (of localhost van de eigen webserver)
